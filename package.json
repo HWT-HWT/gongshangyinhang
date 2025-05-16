@@ -1,0 +1,19 @@
+{
+    "id": "sanqi-video",
+    "name": "基于原生HTML的Video视频组件",
+    "displayName": "基于原生HTML的Video视频组件",
+    "version": "1.0.1",
+    "description": "使用原生HTML中的Video标签播放视频，解决了uniapp官方，在APP以及H5等等的情况下，当宽度定死的情况下，高度无法自适应的问题以及uniapp官方video的层级问题",
+    "keywords": [
+        "video",
+        "uniapp",
+        "视频播放",
+        "原生Video"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}
