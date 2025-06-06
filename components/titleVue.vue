@@ -67,6 +67,7 @@
 		align-items: center;
 		justify-content:space-between;
 		.left{
+			// width: 50%;
 			flex: 1;
 		}
 		.rigth{

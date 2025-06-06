@@ -44,14 +44,14 @@
 			border-radius: 10rpx;
 			padding: 25rpx 0;
 			font-size: 35rpx;
-			color: #dc8588;
+			color: #ce0000;
 			font-weight: bold;
 			border: 1px solid;
 		}
 		.select{
-			background-color: #fd7b7b;
+			background-color: #ce0000;
 			color: #fff;
-			border: 1px solid #fd7b7b;
+			border: 1px solid #ce0000;
 		}
 	}
 </style>

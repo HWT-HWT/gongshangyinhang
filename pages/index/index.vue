@@ -36,7 +36,7 @@
 				<template #LeftIcon>
 					<view class="search-Left-icon">
 						<image src="@/static/location_mine_black.png" mode=""></image>
-						佛山
+						广州
 					</view>
 				</template>
 				<template #input>

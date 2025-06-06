@@ -3,7 +3,7 @@
 		<view class="Logon-head">
 			<image src="@/static/user-head-1.png" mode=""></image>
 			<view class="Logon-head-text">
-				<p>*洪斌 <image src="@/static/dis_renwu_next.png" mode=""></image> </p>
+				<p>*演乐 <image src="@/static/dis_renwu_next.png" mode=""></image> </p>
 				<span>上次登录2025-03-11 17:43:29</span>
 			</view>
 		</view>
@@ -149,7 +149,7 @@
 				dataliEye:true,
 				LogonEye:true,
 				MyMoney:'4,721.34',
-				LoadMoney:'800,000.00',
+				LoadMoney:'1,900,000.00',
 			};
 		},
 		components:{

@@ -1,15 +1,6 @@
 <template>
 	<view class="pension">
-		<view >
-			<backtaberVue :TitleImage='TitleImage' :rigthIcon='rigthIcon'>
-				个人养老金
-			</backtaberVue>
-		</view>
-		<view class="pension-title" v-if="title">
-			<backtaberVue :TitleImage='TitleImage' :rigthIcon='rigthIcon'>
-				个人养老金
-			</backtaberVue>
-		</view>
+		<loanTitleVue :TitleImage='TitleImage' :rigthIcon='rigthIcon' Color="#000" name='贷款' :Scollor='TopTitle'></loanTitleVue>
 		<view class="pension-bg"></view>
 		<view class="pension-account">
 			<titleVue>
@@ -80,6 +71,7 @@
 	import scrollBtnVue from '../../components/scroll-btn.vue';
 	import investTextBoxVue from '../../components/invest-textBox.vue';
 	import swiperBannerVue from '../../components/swiper-banner.vue';
+	import loanTitleVue from '../../components/loan-Title.vue';
 	export default {
 		data() {
 			return {
@@ -115,7 +107,8 @@
 			titleVue,
 			scrollBtnVue,
 			investTextBoxVue,
-			swiperBannerVue
+			swiperBannerVue,
+			loanTitleVue
 		},
 		onPageScroll(scroll) {
 			scroll.scrollTop > 50 ? this.title = true : this.title = false

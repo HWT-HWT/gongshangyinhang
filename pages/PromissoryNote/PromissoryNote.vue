@@ -12,7 +12,7 @@
 				<view class="text rigth">正常</view>
 			</view>
 			<view class="TitleBox-content">
-				<p>800,000.00元</p>
+				<p>1,900,000.00元</p>
 				<span>借据金额</span>
 			</view>
 		</view>
@@ -60,22 +60,22 @@
 					{money:'2.520,000.00元',text:'贷款金额'}
 				],
 				PromissoryList:[
-					{name:'60个月',text:'借据期限'},
-					{name:'3.45%',text:'年化利率(单利)'},
-					{name:'800,000.00元',text:'借据余额'},
+					{name:'36个月',text:'借据期限'},
+					{name:'3.11%',text:'年化利率(单利)'},
+					{name:'1,900,000.00元',text:'借据余额'},
 				],
 				ContractDetailsListView:[
-					{name:'借据起止日',text:'2024-02-05至2029-02-05'},
-					{name:'还款卡(账)号',text:'6222****8073'},
+					{name:'借据起止日',text:'2025-02-26至2028-02-26'},
+					{name:'还款卡(账)号',text:'6222****0693'},
 					{name:'还款方式 ',text:'按期还息一次还本'},
-					{name:'利率变动方式 ',text:'LPR减15.00个基点'},
+					{name:'利率变动方式 ',text:'LPR加1.00个基点'},
 					{name:'当前积欠本息',text:'0.00元'},
 					{name:'下期应还本息合计',text:'2,300元'},
-					{name:'还款日',text:'每月10日'},
+					{name:'还款日',text:'每月15日'},
 					{name:'重定价周期',text:'12个月'},
-					{name:'下一重定价日',text:'2026年2月5日'}
+					{name:'下一重定价日',text:'2026年2月26日'}
 				],
-				FooterBtnList:['电子借据','还款计划','还款明细'],
+				FooterBtnList:['还款计划','还款明细'],
 				msgType: 'success',
 				type: 'centent',
 			};
@@ -88,15 +88,12 @@
 		},
 		methods:{
 			GoSelect(index){
-				if(index === 1){
+				if(index === 0){
 					this.msgType = this.type
 					this.$refs.alertDialog.open()
 				}
-				index === 2 ? uni.navigateTo({url:'/pages/RepaymentDetails/RepaymentDetails'}) : ''
+				index === 1 ? uni.navigateTo({url:'/pages/RepaymentDetails/RepaymentDetails'}) : ''
 			},
-			// dialogToggle(type) {
-				
-			// },
 			dialogClose() {
 				console.log('点击关闭')
 			},
@@ -142,7 +139,7 @@
 			}
 			.TitleBox-content{
 				width: 100%;
-				color: #fe7b75;
+				color: #ce0000;
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;

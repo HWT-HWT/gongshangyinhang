@@ -10,6 +10,7 @@
 			<image src="@/static/cash_book_defaultpage.png" mode=""></image>
 			<p>您当前不存在符合要求的记录,无法办理此业务</p>
 		</view>
+		
 	</view>
 </template>
 
@@ -32,7 +33,7 @@
 	.Settlement{
 		width: 100vw;
 		min-height: 100vh;
-		background-color: #f7f7f7;
+		background-color: #f7f7f7; 
 		.Settlement-title{
 			background-color: #fff;
 		}

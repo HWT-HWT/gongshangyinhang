@@ -29,7 +29,7 @@
 			
 			<titleVue :LFontSize="'28'" :Padding="'10rpx 0'">
 				<template #left>
-					<text style="color:#555">本金余额 800,000.00</text>
+					<text style="color:#555">本金余额 1,900,000.00</text>
 				</template>
 				<template #rigth>
 					<view style="color:#555;display: flex; align-items: center;">
@@ -40,7 +40,7 @@
 			
 			<view class="MYLoan-footer">
 				<text>下期还款金额 2,300.00</text>
-				<span>下期还款日 2025-04-10</span>
+				<span>下期还款日 2025-06-15</span>
 			</view>
 		</view>
 	</view>

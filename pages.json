@@ -166,6 +166,20 @@
 			{
 				"navigationBarTitleText" : ""
 			}
+		},
+		{
+			"path" : "pages/PageLoan/PageLoan",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/PageLoanPlan/PageLoanPlan",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
 		}
 	],
 	"globalStyle": {

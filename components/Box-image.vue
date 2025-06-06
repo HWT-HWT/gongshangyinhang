@@ -31,7 +31,7 @@
 		align-items: center;
 		justify-content: space-between;
 		.image{
-			width: 50%;
+			flex: 1;
 			display: flex;
 			align-items: center;
 			justify-content: center;

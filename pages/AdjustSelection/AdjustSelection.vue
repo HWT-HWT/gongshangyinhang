@@ -14,7 +14,7 @@
 			<view class="TextBox-list">
 				<view class="list-box">
 					<text class="text">贷款金额</text>
-					<text>800,000.00元</text>
+					<text>1,900,000.00元</text>
 				</view>
 				<view class="list-box">
 					<text  class="text">借据起止日</text>

@@ -70,7 +70,7 @@
 						</template>
 					</titleVue>
 					<view class="video-top-content">
-						<p>佛山新华支行</p>
+						<p>广州新华支行</p>
 						<uni-tag text="营业中" type="primary" size="mini" style="background-color: #2a67a0; border: none; font-weight:bold;" /><text class="video-top-content-name">距您3.9KM</text>
 					</view>	
 					<view class="video-top-bottom">
@@ -187,7 +187,7 @@
 			},
 			GetIndex(index){
 				index === 3 ? uni.navigateTo({
-					url:'/pages/Loan/Loan'
+					url:'/pages/PageLoan/PageLoan'
 				}) : ''
 			}
 		},

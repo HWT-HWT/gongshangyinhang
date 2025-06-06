@@ -99,16 +99,16 @@
 				],
 				ContractDetailsListView: [{
 						name: '基本账户',
-						text: '3602****8648',
+						text: '3602*****8810',
 						Rimage: true
 					},
 					{
 						name: '启用日期',
-						text: '2024年06月11日'
+						text: '2024年12月13日'
 					},
 					{
 						name: '到期日期 ',
-						text: '2034年03月',
+						text: '2034年10月',
 						icon: true
 					},
 					{

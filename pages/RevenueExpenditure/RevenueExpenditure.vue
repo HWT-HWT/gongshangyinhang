@@ -30,13 +30,13 @@
 			
 			<view class="search-Select">
 				<view class="selectBtn" @click="open(0)">
-					*洪斌
+					*演乐
 					<image src="@/static/my_detail_classify_down_icon.png" mode=""></image>
 				</view>
 				<view class="selectBtn" @click="open(1)" :style="{color:CardIndex !==0 ? '#c56a70' :'#000',fontWeight:CardIndex !==0 ? 'bold' :'normal'}">
 					{{CardIndex === 0 ? '全部账户' : ''}}
 					{{CardIndex === 1 ? '尾号8073' : ''}}
-					{{CardIndex === 2 ? '尾号7107' : ''}}
+					{{CardIndex === 2 ? '尾号0693' : ''}}
 					<image src="@/static/my_detail_classify_down_icon.png" mode=""></image>
 				</view>
 				<view class="selectBtn" @click="open(2)">
@@ -82,7 +82,7 @@
 				<view class="Container">
 					<image src="@/static/qr_radio_check.png" mode=""></image>
 					<view class="Container-Title">
-						*洪斌
+						*演乐
 					</view>
 				</view>
 				<view class="btn" @click="colse()">
@@ -121,7 +121,7 @@
 					<image src="@/static/account-cart-1.png" mode=""></image>
 					<view class="content-text">
 						<p>广州 借记卡(I类)</p>
-						<span>9558****7107</span>
+						<span>6222****0693</span>
 					</view>
 				</view>
 				
@@ -230,53 +230,89 @@
 				value: '',
 				listTrue:[
 					{
+						time:'2025年6月',
+						ImageUrl:'../../static/June.png',
+						QueryDetails:[
+							{date:'1',week:'周日',notes:'消费',source:'财付通-扫二维码付款',time:'工银借记卡0693 03:18:18',AddDete:'100.00',balance:'余额:28.15',weekend:'#4075c9',isTrue:false},
+						]
+					},
+					{
+						time:'2025年5月',
+						ImageUrl:'../../static/May.png',
+						QueryDetails:[
+							{date:'15',week:'周四',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡0693 05:06:27',AddDete:'25,916.67',balance:'余额:128.15',isTrue:false},
+							{date:'14',week:'周三',notes:'微信零钱提现',source:'财付通',time:'工银借记卡0693 22:14:33',AddDete:'500.00',balance:'余额:26,044.82',isTrue:true},
+							{notes:'消费',source:'抖音支付-广州市荔湾区益雨茶行',time:'工银借记卡0693 22:12:35',AddDete:'460.00',balance:'余额:25.544.82',isTrue:false},
+							{notes:'他行汇入',source:'陈演乐',time:'工银借记卡0693 16:36:32',AddDete:'26,000.00',balance:'余额:26,004.82',isTrue:true},
+						]
+					},
+					{
+						time:'2025年4月',
+						ImageUrl:'../../static/April.png',
+						QueryDetails:[
+							{date:'19',week:'周六',notes:'消费',source:'财付通-滴滴出行',time:'工银借记卡0693 04:41:55',AddDete:'50.00',balance:'余额:4.82',weekend:'#4075c9',isTrue:false},
+							{notes:'消费',source:'财付通-扫二维码付款',time:'工银借记卡0693 02:13:40',AddDete:'50.00',balance:'余额:54.82',weekend:'#4075c9',isTrue:false},
+							{date:'15',week:'周二',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡0693 05:21:33',AddDete:'25,916.67',balance:'余额:104.82',weekend:'#4075c9',isTrue:false},
+							{date:'14',week:'周一',notes:'他行汇入',source:'陈演乐',time:'工银借记卡0693 15:55:15',AddDete:'26,021.49',balance:'余额:104.82',weekend:'#4075c9',isTrue:false},
+						]
+					},
+					{
+						time:'2024年3月',
+						ImageUrl:'../../static/March.png',
+						QueryDetails:[
+							{date:'21',week:'周五',notes:'利息',source:'批量业务',time:'工银借记卡0693 01:14:14',AddDete:'0.37',balance:'余额:21.49',weekend:'#646a87',isTrue:true},
+							{notes:'利息',source:'批量业务',time:'工银借记卡0693 00:54:42',AddDete:'0.01',balance:'余额:1.90',weekend:'#646a87',isTrue:true},
+							{notes:'消费',source:'支付宝-北京三快在线科技有限公司',time:'工银借记卡0693 00:16:44',AddDete:'29.90',balance:'余额:21.12',weekend:'#646a87',isTrue:false},
+							{date:'20',week:'周四',notes:'消费',source:'支付宝-北京三快在线科技有限公司',time:'工银借记卡0693 21:51:51',AddDete:'37.50',balance:'余额:51.02',weekend:'#646a87',isTrue:false},
+							{date:'15',week:'周六',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡0693 21:51:51',AddDete:'16,413.89',balance:'余额:51.02',weekend:'#4075c9',isTrue:false},
+							{date:'13',week:'周四',notes:'他行汇入',source:'陈演乐',time:'工银借记卡0693 06:50:53',AddDete:'300.00',balance:'余额:16,502.41',weekend:'#646a87',isTrue:true},
+							{date:'12',week:'周三',notes:'消费',source:'抖音支付-广州麦慕服装有限公司',time:'工银借记卡0693 06:50:53',AddDete:'219.00',balance:'余额:16,202.41',weekend:'#646a87',isTrue:false},
+							{date:'11',week:'周二',notes:'他行汇入',source:'陈演乐',time:'工银借记卡0693 06:50:53',AddDete:'16,420.00',balance:'余额:16,421.41',weekend:'#646a87',isTrue:true},
+							{date:'6',week:'周四',notes:'他行汇入',source:'支付宝-特斯拉(上海)有限公司',time:'工银借记卡0693 06:50:53',AddDete:'9.99',balance:'余额:1.89',weekend:'#646a87',isTrue:false},
+							{date:'5',week:'周三',notes:'他行汇入',source:'支付宝-上海格物致品网络科技有限公司',time:'工银借记卡0693 06:50:53',AddDete:'39.90',balance:'余额:11.88',weekend:'#646a87',isTrue:false},
+						]
+					},
+					{
 						time:'2024年2月',
 						ImageUrl:'../../static/February.png',
 						QueryDetails:[
-							{date:'15',week:'周日',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡4404 14:02:40',AddDete:'2,300.00',balance:'余额:3,510.67',weekend:'#4075c9',isTrue:false},
+							{date:'12',week:'周三',notes:'消费',source:'支付宝-北京三快在线科技有限公司',time:'工银借记卡0693 17:26:36',AddDete:'0.25',balance:'余额:51.78',isTrue:false},
+							{date:'8',week:'周六',notes:'财付通-美团',source:'中国工商银行',time:'工银借记卡0693 14:37:24',AddDete:'34.90',balance:'余额:1.41',isTrue:false},
+							{notes:'消费',source:'财付通-手机充值-中国移动',time:'工银借记卡0693 14:02:25',AddDete:'300.00',balance:'余额:36.31',isTrue:false}, 
+							{date:'4',week:'周二',notes:'跨行汇款',source:'陈靖雯',time:'工银借记卡0693 16:38:16',AddDete:'7,000.00',balance:'余额:10,313.21',isTrue:true},
+							{notes:'消费',source:'财付通-扫二维码付款',time:'工银借记卡0693 14:02:25',AddDete:'60.00',balance:'余额:3.313.21',isTrue:false},
+							{notes:'消费',source:'财付通-手机充值-中国移动',time:'工银借记卡0693 14:02:25',AddDete:'200.00',balance:'余额:3,373.21',isTrue:false},
+							{notes:'消费',source:'财付通-中华思源工程基金会',time:'工银借记卡0693 14:02:25',AddDete:'0.10',balance:'余额:3,573.21',isTrue:false},
+							{notes:'消费',source:'财付通-够飘休闲娱乐(广州)有限公...',time:'工银借记卡0693 14:02:25',AddDete:'999.00',balance:'余额:3.573.31',isTrue:false},
+							{notes:'消费',source:'财付通-微信转账',time:'工银借记卡0693 14:02:25',AddDete:'2,000.00',balance:'余额:36.31',isTrue:false},
+							{notes:'消费',source:'财付通-微信转账',time:'工银借记卡0693 14:02:25',AddDete:'340.00',balance:'余额:6,572.31',isTrue:false},
+							{date:'3',week:'周一',notes:'消费',source:'财付通-微信转账',time:'工银借记卡0693 23:44:53',AddDete:'200.00',balance:'余额:6,912.31',isTrue:false},
+							{notes:'退款',source:'财付通-微信转账',time:'工银借记卡0693 22:53:06',AddDete:'50.00',balance:'余额:7.112.31',isTrue:false},
+							{date:'2',week:'周日',notes:'消费',source:'财付通-够飘自动售卖机',time:'工银借记卡0693 22:53:06',AddDete:'99.00',balance:'余额:7,162.31',isTrue:false},
+							{notes:'消费',source:'财付通-微信转账',time:'工银借记卡0693 22:51:54',AddDete:'2,988.00',balance:'余额:7,162.31',isTrue:false},
+							{notes:'退款',source:'财付通-微信转账',time:'工银借记卡0693 22:53:06',AddDete:'2,988.00',balance:'余额:7,162.31',isTrue:true},
+							{notes:'消费',source:'财付通-微信转账',time:'工银借记卡0693 22:51:54',AddDete:'2,988.00',balance:'余额:7,162.31',isTrue:false},
+							{date:'1',week:'周六',notes:'消费',source:'支付宝-华为软件技术有限公司',time:'工银借记卡0693 22:53:06',AddDete:'9.10',balance:'余额:10,249.31',isTrue:false},
+							{notes:'跨行汇款',source:'陈演乐',time:'工银借记卡0693 22:53:06',AddDete:'2,500.00',balance:'余额:10,258.41',isTrue:false},
+							{notes:'跨行汇款',source:'陈演乐',time:'工银借记卡0693 22:53:06',AddDete:'1,300.00',balance:'余额:12,758.41',isTrue:false},
+							{notes:'跨行汇款',source:'陈演乐',time:'工银借记卡0693 22:53:06',AddDete:'6,050.00',balance:'余额:14,058.41',isTrue:false},
 						]
 					},
 					{
 						time:'2024年1月',
 						ImageUrl:'../../static/January.png',
 						QueryDetails:[
-							{date:'15',week:'周三',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡4404 14:02:56',AddDete:'2,300.00',balance:'余额:5,811.67',isTrue:false},
-						]
-					},
-					{
-						time:'2024年12月',
-						ImageUrl:'../../static/December.png',
-						QueryDetails:[
-							{date:'15',week:'周日',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡4404 14:03:12',AddDete:'2,300.00',balance:'余额:8,112.67',weekend:'#4075c9',isTrue:false},
-						]
-					},
-					{
-						time:'2024年11月',
-						ImageUrl:'../../static/November.png',
-						QueryDetails:[
-							{date:'15',week:'周六',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡4404 14:02:32',AddDete:'2,300.00',balance:'余额:10,413.67',weekend:'#4075c9',isTrue:false},
-						]
-					},
-					{
-						time:'2024年10月',
-						ImageUrl:'../../static/October.png',
-						QueryDetails:[
-							{date:'15',week:'周三',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡4404 14:02:25',AddDete:'2,300.00',balance:'余额:12,714.67',isTrue:false},
-						]
-					},
-					{
-						time:'2024年9月',
-						ImageUrl:'../../static/September.png',
-						QueryDetails:[
-							{date:'15',week:'周日',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡4404 14:02:38',AddDete:'2,300.00',balance:'余额:15,015.67',weekend:'#4075c9',isTrue:false},
+							{date:'30',week:'周四',notes:'微信零钱提现',source:'财付通',time:'工银借记卡0693 20:15:16',AddDete:'20,000.00',balance:'余额:20,108.41',weekend:'#4075c9',isTrue:false},
+							{date:'29',week:'周三',notes:'微信零钱提现',source:'财付通',time:'工银借记卡0693 20:15:16',AddDete:'10,000.00',balance:'余额:30,108.41',weekend:'#4075c9',isTrue:false},
 						]
 					},
 					{
 						time:'2024年8月',
 						ImageUrl:'../../static/August.png',
 						QueryDetails:[
-							{date:'15',week:'周四',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡4404 14:02:08',AddDete:'2,683.33',balance:'余额:17,316.67',isTrue:false},
-							{date:'',week:'',notes:'银联入账',source:'网上银行',time:'工银借记卡4404 11:14:38',AddDete:'20,000.00',balance:'余额:20,000.00',isTrue:true},
+							{date:'15',week:'周四',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡0693 14:02:08',AddDete:'2,683.33',balance:'余额:17,316.67',isTrue:false},
+							{notes:'ATM取款',source:'广州市白云区江高镇小塘村',time:'工银借记卡0693 11:14:38',AddDete:'5,000.00',balance:'余额:108.41',isTrue:false},
+							{notes:'ATM取款',source:'广州市白云区江高镇小塘村',time:'工银借记卡0693 11:14:38',AddDete:'5,000.00',balance:'余额:5,108.41',isTrue:false},
 						]
 					},
 				],

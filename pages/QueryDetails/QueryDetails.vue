@@ -5,7 +5,7 @@
 			<backtaberVue :TitleImage='TitleImage':RightMax='1' :isText='true' :rightText='"34"'>
 				<text style="color: #677781;">查询明细</text>
 				<template #text>
-					<text @click="GOSearchMore">查询更多</text>
+					<text @click="GOSearchMore">更多查询</text>
 				</template>
 			</backtaberVue>
 		</view>
@@ -20,13 +20,13 @@
 			<view class="Card-content" v-else>
 				<image src="@/static/account-cart-1.png" mode=""></image>
 				<view class="content-text" >
-					<p>理财金账户(I类) 尾号7107</p>
+					<p>理财金账户(I类) 尾号0693</p>
 				</view>
 			</view>
 			
 			<view class="Card-Money">
 				<view class="CommonMoney">
-					当前汇总笔数:{{cardIndex === 2 ? "0" :12}}
+					当前汇总笔数:{{cardIndex === 2 ? "5" :12}}
 				</view>
 				<view class="RevenueExpenditure">
 					<p class="Revenue"> 
@@ -40,7 +40,7 @@
 			</view>
 		</view>
 		
-		<view class="QueryDetails-SubTitle"   v-if="cardIndex === 2">
+		<view class="QueryDetails-SubTitle"   v-if="cardIndex === 1">
 			<view class="tisi">
 				您最近一个月没有账户交易明细，如需查询更长时间范围的明细，请点击右上角“更多查询”。
 			</view>
@@ -94,34 +94,34 @@
 							{date:'05',week:'周三',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡8073 14:02:40',AddDete:'2,300.00',balance:'余额:3,510.67',isTrue:false},
 						]
 					},
-					{
-						time:'2025年1月',
-						ImageUrl:'../../static/January.png',
-						QueryDetails:[
-							{date:'05',week:'周日',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡8073 14:02:56',AddDete:'2,300.00',balance:'余额:5,816.67',isTrue:false,weekend:'#4075c9'},
-						]
-					},
-					{
-						time:'2024年12月',
-						ImageUrl:'../../static/December.png',
-						QueryDetails:[
-							{date:'05',week:'周日',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡8073 14:03:12',AddDete:'2,300.00',balance:'余额:8,116.67',isTrue:false},
-						]
-					},
-					{
-						time:'2024年11月',
-						ImageUrl:'../../static/November.png',
-						QueryDetails:[
-							{date:'05',week:'周二',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡8073 14:02:32',AddDete:'2,300.00',balance:'余额:10,416.67',isTrue:false},
-						]
-					},
-					{
-						time:'2024年10月',
-						ImageUrl:'../../static/October.png',
-						QueryDetails:[
-							{date:'05',week:'周六',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡8073 14:02:25',AddDete:'2,300.00',balance:'余额:12,716.67',isTrue:false,weekend:'#4075c9'},
-						]
-					},
+					// {
+					// 	time:'2025年1月',
+					// 	ImageUrl:'../../static/January.png',
+					// 	QueryDetails:[
+					// 		{date:'05',week:'周日',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡8073 14:02:56',AddDete:'2,300.00',balance:'余额:5,816.67',isTrue:false,weekend:'#4075c9'},
+					// 	]
+					// },
+					// {
+					// 	time:'2024年12月',
+					// 	ImageUrl:'../../static/December.png',
+					// 	QueryDetails:[
+					// 		{date:'05',week:'周日',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡8073 14:03:12',AddDete:'2,300.00',balance:'余额:8,116.67',isTrue:false},
+					// 	]
+					// },
+					// {
+					// 	time:'2024年11月',
+					// 	ImageUrl:'../../static/November.png',
+					// 	QueryDetails:[
+					// 		{date:'05',week:'周二',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡8073 14:02:32',AddDete:'2,300.00',balance:'余额:10,416.67',isTrue:false},
+					// 	]
+					// },
+					// {
+					// 	time:'2024年10月',
+					// 	ImageUrl:'../../static/October.png',
+					// 	QueryDetails:[
+					// 		{date:'05',week:'周六',notes:'贷款本息',source:'中国工商银行',time:'工银借记卡8073 14:02:25',AddDete:'2,300.00',balance:'余额:12,716.67',isTrue:false,weekend:'#4075c9'},
+					// 	]
+					// },
 					
 				],
 				totalAdd:0,

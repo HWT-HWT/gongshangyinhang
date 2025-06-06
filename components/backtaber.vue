@@ -1,5 +1,5 @@
 <template>
-	<view class="pension-backtaber" >
+	<view class="pension-backtaber">
 		<occupyVue></occupyVue>
 		<view class="backtaber-box">
 			<view class="backtaber-title" :style="{color:Color}">
@@ -8,7 +8,7 @@
 		
 		</view>
 		
-		<view class="backtaber-icon">
+		<view class="backtaber-icon" >
 			<image :src="TitleImage" mode="" @click="back"></image>
 			<view class="backtaber-right-icon">
 				<image :style="{'transform':`scale(${RightMax})`}" :src="item" mode="" v-for="(item,index) in rigthIcon" :key="index"></image>

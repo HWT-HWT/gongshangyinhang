@@ -12,7 +12,7 @@
 				<view class="text rigth">正常</view>
 			</view>
 			<view class="TitleBox-content">
-				<p>800,000.00元</p>
+				<p>1,900,000.00元</p>
 				<span>贷款余额 <image src="@/static/qrcode_qr_new_i.png" mode=""></image> </span>
 			</view>
 			<view class="TitleBox-footer">
@@ -66,7 +66,7 @@
 				</titleVue>
 				<titleVue :LFontW='false' :LFontSize="'25'" :RFontSize="'25'" :RColor="'#888'" :Lcolor="'#888'" :RFontW='true'>
 					<template #left>
-						借据金额 <text style="font-size: 34rpx; color: #000; font-weight: bold; margin-left: 10rpx;">800,000.00元</text>
+						借据金额 <text style=" font-size: 32rpx; color: #000; font-weight: bold; margin-left: 10rpx;">1,900,000.00元</text>
 					</template>
 					<template #rigth>
 						2024.02.05-2029.02.05
@@ -95,16 +95,16 @@
 				rigthIcon:['../../static/base_im_icon_service.png','../../static/base_im_icon_more.png'],
 				ContractDetails:[
 					{money:'0.00元',text:'当前可提款金额',icon:'../../static/qrcode_qr_new_i.png'},
-					{money:'800,000.00元',text:'贷款金额'}
+					{money:'1,900,000.00元',text:'贷款金额'}
 				],
 				ContractDetailsList:['服务行信息','调整最高还款额','变更还款账号','变更还款日'],
 				ContractDetailsListView:[
-					{name:'贷款合同',text:'20132000000000250121',copy:true},
+					{name:'贷款合同',text:'36022000000000741789',copy:true},
 					{name:'是否循环贷款',text:'是'},
-					{name:'提款截止日期 ',text:'2034-01-29',icon:true},
+					{name:'提款截止日期 ',text:'2035-02-18',icon:true},
 					{name:'可用尾款金额 ',text:'0.00元',icon:true},
 					{name:'贷款用途',text:'经营'},
-					{name:'当前累计发放贷款',text:'800,000.00元'},
+					{name:'当前累计发放贷款',text:'1,900,000.00元'},
 					{name:'金额'}
 				],
 				FooterBtnList:['还款','贷款明细打印','贷款结清证明']

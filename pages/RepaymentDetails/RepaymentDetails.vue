@@ -3,6 +3,7 @@
 		<occupyVue></occupyVue>
 		<view class="RepaymentDetails-NavTitle">
 			<backtaberVue :TitleImage='TitleImage' :rigthIcon='rigthIcon' :RightMax='1'>
+				
 				<text style="color: #677781;">还款明细</text>
 			</backtaberVue>
 		</view>
@@ -78,20 +79,10 @@
 				TitleImage:"../../static/icon_go_left-1.png",
 				rigthIcon:['../../static/base_im_icon_service.png','../../static/base_im_icon_more.png'],
 				RepaymentDetailsListView:[
-					{num:'0',money:'800,000.00元',time:'2024-02-05',sub:'发放',Istrue:true},
+					{num:'0',money:'1,900,000.00元',time:'2024-02-05',sub:'发放',Istrue:true},
 					{num:'1',money:'2,684.33元',time:'2024-03-05',sub:'正常扣款'},
 					{num:'2',money:'2,300.00元',time:'2024-04-05',sub:'正常扣款'},
-					{num:'3',money:'2,300.00元',time:'2024-05-05',sub:'正常扣款'},
-					{num:'4',money:'2,300.00元',time:'2024-06-05',sub:'正常扣款'},
-					{num:'5',money:'2,300.00元',time:'2024-07-05',sub:'正常扣款'},
-					{num:'6',money:'2,300.00元',time:'2024-08-05',sub:'正常扣款'},
-					{num:'7',money:'2,300.00元',time:'2024-09-05',sub:'正常扣款'},
-					{num:'8',money:'2,300.00元',time:'2024-10-05',sub:'正常扣款'},
-					{num:'9',money:'2,300.00元',time:'2024-11-05',sub:'正常扣款'},
-					{num:'10',money:'2,300.00元',time:'2024-12-05',sub:'正常扣款'},
-					{num:'11',money:'2,300.00元',time:'2025-01-05',sub:'正常扣款'},
-					{num:'12',money:'2,300.00元',time:'2024-02-05',sub:'正常扣款'},
-					{num:'13',money:'2,300.00元',time:'2025-03-05',sub:'正常扣款'},
+					{num:'3',money:'2,100.00元',time:'2024-05-05',sub:'正常扣款'},
 				],
 				num:0,
 			};
@@ -131,7 +122,7 @@
 		.RepaymentDetails-TitleBox{
 			width: 100%;
 			padding-bottom: 20rpx;
-			background-color: #fd7b7b;
+			background-color: #ce0000;
 			margin-top: 90rpx;
 			.TitleBox-box{
 				display: flex;
@@ -146,7 +137,7 @@
 					padding: 0 60rpx;
 					font-size: 30rpx;
 					border-radius: 50rpx;
-					color: #fd7b7b;
+					color: #ce0000;
 					background-color: #fff;
 				}
 				.text{

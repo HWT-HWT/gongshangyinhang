@@ -4,7 +4,7 @@
 		<view class="user-Navtitle" :style="{'opacity':search === 0 ?  1 : 0}" >
 			<view class="Navtitle-Wz">
 				<image src="@/static/location_mine_black.png" mode=""></image>
-				<text>佛山</text>
+				<text>广州</text>
 			</view>
 			<view class="Navtitle-icon">
 				<image src="@/static/set_mine_black.png" mode=""></image>
@@ -17,7 +17,7 @@
 			<view class="user-Navtitle">
 				<view class="Navtitle-Wz">
 					<image src="@/static/location_mine_black.png" mode=""></image>
-					<text>佛山</text>
+					<text>广州</text>
 				</view>
 				<view class="Navtitle-icon">
 					<image src="@/static/set_mine_black.png" mode="" @click="close(token)"></image>

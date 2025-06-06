@@ -9,10 +9,10 @@
 			<view class="balance-money">
 				<view class="balance-money-text" @click="IsEye">
 					贷款余额 
-					<image src="@/static/upsdk_balance_show.png" v-if="eye" mode=""></image> 
+					<image src="@/static/upsdk_balance_show.png" v-if="eye" mode=""></image>
 					<image src="@/static/upsdk_balance_show-1.png" v-else mode=""></image> 
 				</view>
-				<span v-if="eye">800,000.00</span>
+				<span v-if="eye">1,900,000.00</span>
 				<span v-else >****</span>
 			</view>
 			<view class="balance-list">
@@ -98,7 +98,7 @@
 					url:'/pages/PrintHistory/PrintHistory'
 				}):''
 				index === 4 ? uni.navigateTo({
-					url:'/pages/RepaymentPlan/RepaymentPlan'
+					url:'/pages/PageLoanPlan/PageLoanPlan'
 				}):''
 			}
 		}

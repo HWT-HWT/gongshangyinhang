@@ -1,6 +1,6 @@
 <template>
 	<view class="MyAccount-Card" :style="{background:index === 2 ? '#fff' : ''}" >
-		 <view v-for="(item,index) in index === 1 ? list : listTow" :key="index" >
+		 <view v-for="(item,index) in listTow" :key="index" >
 		 	<view class="Card-content">
 		 		<image :src="item.image" mode=""></image>
 				<view class="content-text">
@@ -11,9 +11,9 @@
 		 	<view class="Card-Money" v-if='!Account'>
 		 		<view class="span">人民币余额 <image v-if="item.icon" src="@/static/nine_title_fresh.png" mode=""></image> </view>
 		 		<text v-if='item.money'>{{item.money}}</text>
-				<view v-else class="btn">
+				<!-- <view v-else class="btn">
 					点击查看
-				</view>
+				</view> -->
 		 	</view>
 		 	<view class="Card-Money Account" v-else>
 		 		<span>柜面注册</span>
@@ -27,8 +27,8 @@
 		name:"card-Box",
 		data() {
 			return {
-				list:[{name:'佛山 理财金账户(I类)', CarNumber:'6222****8073',icon:true, image:'../../static/account-cart-2.png',money:'1,210.67'}],
-				listTow:[{name:'佛山 借记卡(I类)', CarNumber:'9558****7107',icon:false, image:'../../static/account-cart-1.png'}],
+				// list:[{name:'广州 理财金账户(I类)', CarNumber:'6222****8073',icon:true, image:'../../static/account-cart-2.png',money:'1,210.67'}],
+				listTow:[{name:'广州 借记卡(I类)', CarNumber:'6222****0693',icon:false, image:'../../static/account-cart-1.png'}],
 			};
 		},
 		props:{

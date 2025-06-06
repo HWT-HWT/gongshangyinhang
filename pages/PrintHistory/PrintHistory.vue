@@ -57,7 +57,7 @@
 					接收邮箱
 				</template>
 				<template #rightText>
-					<text style="color: #2764dc;">y****2@163.com</text>
+					<input type="text" placeholder="请输入正确的邮箱格式" />
 				</template>
 			</SearchMoreListViewVue>
 		</view>

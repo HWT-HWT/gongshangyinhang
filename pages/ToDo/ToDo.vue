@@ -19,7 +19,12 @@
 			<p>暂无待办事项</p>
 		</view>
 		
-		<view class="complete" v-else>
+		<view class="Loan-settle" v-else>
+			<image src="@/static/cash_book_defaultpage.png" mode=""></image>
+			<p>暂无待办事项</p>
+		</view>
+		
+		<!-- <view class="complete" v-else>
 			<view class="complete-title">
 				<view>
 					<span>个人贷款申请表</span>
@@ -31,7 +36,7 @@
 			</view>
 			<view class="list" v-for="(item,index) in list" :key="index">{{item}}</view>
 			
-		</view>
+		</view> -->
 	</view>
 </template>
 
@@ -44,7 +49,7 @@
 				rigthIcon:['../../static/base_im_icon_service.png','../../static/base_im_icon_more.png'],
 				TabsList:['待办事项','已完成事项'],
 				select:0,
-				list:['主申请人 : *洪斌','借款品种 : 个人房产抵押消费与经营组合贷款','贷款支行 : 佛山南庄支行','确认时间 : 2024-02-01 09:59:03']
+				list:['主申请人 : *演乐','借款品种 : 个人房产抵押消费与经营组合贷款','贷款支行 : 广州南庄支行','确认时间 : 2024-02-01 09:59:03']
 			};
 		},
 		components:{

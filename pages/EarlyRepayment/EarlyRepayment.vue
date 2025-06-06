@@ -20,11 +20,11 @@
 			<view class="EarlyRepayment-box">
 				<view class="name">
 					<span>贷款额度(元)</span>
-					<text>800,000.00</text>
+					<text>1,900,000.00</text>
 				</view>
 				<view class="SubName">
 					<span>贷款余额(元)</span>
-					<text>800,000.00</text>
+					<text>1,900,000.00</text>
 				</view>
 			</view>
 			<view class="EarlyRepayment-box">

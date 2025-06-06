@@ -10,7 +10,7 @@
 			</backtaberVue>
 		</view>
 		
-		<view class="MyAccount-card" v-for="(item,index) in 2" :key="index" @click="GoAccountDatali(index+1)" :style="{margin:index === 1 ? '0 auto' :''}" >
+		<view class="MyAccount-card" v-for="(item,index) in 1" :key="index" @click="GoAccountDatali(index+1)" :style="{margin:index === 1 ? '0 auto' :''}" >
 			<cardBoxVue :index="index+1" ></cardBoxVue>
 		</view>
 		
@@ -88,7 +88,7 @@
 		methods:{
 			GoAccountDatali(index){
 				uni.navigateTo({
-					url:`/pages/AccountDatali/AccountDatali?id=${index}`
+					url:`/pages/AccountDatali/AccountDatali?id=${index+1}`
 				})
 			}
 		}
